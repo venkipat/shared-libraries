@@ -1,4 +1,4 @@
-import politie.jenkins.Constants
+import jenkins.Constants
 import groovy.json.JsonSlurper
 
 // Constructor, called from PipelineBuilder.initialize().
