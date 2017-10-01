@@ -12,6 +12,11 @@ void cleanWorkspace() {
     sh "echo 'Cleaning workspace'"
     deleteDir()
 }
+ 
+void clone(String project) {
+    sh "echo 'Cloning Repo'"
+    git url: Constants.GITLAB_CHECKOUT_BASE_URL + project + '.git'    
+}
 
 void checkout(String project, String branch) {
     checkout changelog: true, poll: true, scm: [
