@@ -13,4 +13,8 @@ def getPipelineSteps() {
     return pipelineSteps
 }
 
+void clone(String project) {
+    pipelinesteps.clone(project)
+}
+
 return this;
